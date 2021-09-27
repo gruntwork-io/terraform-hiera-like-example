@@ -1,5 +1,7 @@
 # Deploying ECS services dynamically from Hiera-like YAML definitions with Terraform/Terragrunt
 
+**THIS IS PURELY EXAMPLE CODE. IT IS NOT THOROUGHLY TESTED, WILL NOT BE SUPPORTED, AND IS NOT MEANT FOR PRODUCTION USE.**
+
 This repo shows an example of how to use Terraform/Terragrunt to deploy services to ECS based on definitions in `yaml` files that loosely resemble the approach used with Hiera.
 
 The basic idea is:
