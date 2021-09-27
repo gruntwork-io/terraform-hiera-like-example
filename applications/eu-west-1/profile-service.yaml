@@ -1,0 +1,2 @@
+enable_auto_scaling: false
+min_number_of_tasks: 5

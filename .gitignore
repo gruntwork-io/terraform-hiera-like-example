@@ -1,0 +1,24 @@
+# Terraform/Terragrunt files
+.terraform
+terraform.tfstate
+terraform.tfvars
+*.tfstate*
+.terragrunt-cache
+
+# OS X files
+.history
+.DS_Store
+
+# IntelliJ files
+.idea_modules
+*.iml
+*.iws
+*.ipr
+.idea/
+build/
+*/build/
+out/
+
+# Ignore Terraform lock files, as we want to test the Terraform code in these repos with the latest provider
+# versions.
+.terraform.lock.hcl
