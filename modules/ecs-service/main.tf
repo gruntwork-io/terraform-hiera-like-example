@@ -12,3 +12,9 @@ resource "random_id" "mock_ecs_service" {
 
   byte_length = 8
 }
+
+# Use this data source to lookup information about the current AWS partition in which Terraform is working.
+# This will return the identifier of the current partition (e.g., aws in AWS Commercial, aws-us-gov in AWS GovCloud,
+# aws-cn in AWS China).
+# https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html
+data "aws_partition" "current" {}

@@ -3,5 +3,5 @@ output "ecs_service_id" {
 }
 
 output "ecs_service_arn" {
-  value = "arn:aws:ecs:${var.aws_region}:123456789012:service/${var.service_name}"
+  value = "arn:${data.aws_partition.current.partition}:ecs:${var.aws_region}:123456789012:service/${var.service_name}"
 }
